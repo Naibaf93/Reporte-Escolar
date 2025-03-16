@@ -20,3 +20,16 @@ function calcularPromedio(){
     let promedio = (suma / 5);
     document.getElementById("promedio").textContent = promedio;
 }
+
+function notaMasAlta(){
+    let notaAlta = 0;
+    let i = 0;
+
+    while (i < 5) {
+        if(array[i] > notaAlta){
+            notaAlta = array[i];
+        }
+        i++
+    }
+    document.getElementById("nota").textContent = notaAlta;
+}
