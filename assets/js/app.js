@@ -33,3 +33,17 @@ function notaMasAlta(){
     }
     document.getElementById("nota").textContent = notaAlta;
 }
+
+function hayAplazo() {
+    let aplazo = "No";
+    let i = 0;
+
+    do{
+        if(array[i] < 4){
+            aplazo = "Sí";
+            break;
+        }
+        i++
+    } while (i < 5);
+    document.getElementById("aplazo").textContent = aplazo;
+}
