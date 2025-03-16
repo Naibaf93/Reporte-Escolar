@@ -9,3 +9,14 @@ function listarNotas() {
         lista.appendChild(item);
     }
 }
+
+function calcularPromedio(){
+    let suma = 0;
+    
+    for ( i = 0; i < 5; i++) {
+        suma += array[i];
+    }
+
+    let promedio = (suma / 5);
+    document.getElementById("promedio").textContent = promedio;
+}
